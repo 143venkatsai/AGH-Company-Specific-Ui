@@ -9,8 +9,7 @@ export const TestContainer = styled.div`
   flex-direction: column;
   gap: 28px;
 
-  width: 100%;
-  max-width: 100%;
+  width: 100% !important;
   box-sizing: border-box;
 `;
 
