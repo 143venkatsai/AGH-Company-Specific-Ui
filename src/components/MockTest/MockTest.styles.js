@@ -56,9 +56,9 @@ export const TestInfoLabel = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
+  color: ${(props) => props.theme.card_new_text};
 
   span {
-    color: ${(props) => props.theme.card_new_text};
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
