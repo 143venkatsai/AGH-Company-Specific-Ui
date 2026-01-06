@@ -6,6 +6,7 @@ import { GoQuestion } from "react-icons/go";
 import { RxLapTimer } from "react-icons/rx";
 
 import {
+  MobileInfo,
   TestButton,
   TestContainer,
   TestDetails,
@@ -34,12 +35,14 @@ const PracticeTest = ({ testDetails }) => {
           <TestDetails>
             <TestTitle>{title}</TestTitle>
             <TestInfo>
-              {type === "technical" && (
-                <TestInfoLabel>
-                  <FaCode size={20} />
-                  <span>{codingQuestions} Coding Qs</span>
-                </TestInfoLabel>
-              )}
+              <MobileInfo>
+                {type === "technical" && (
+                  <TestInfoLabel>
+                    <FaCode size={20} />
+                    <span>{codingQuestions} Coding Qs</span>
+                  </TestInfoLabel>
+                )}
+              </MobileInfo>
               <TestInfoLabel>
                 <GoQuestion size={20} />
                 <span>{questionsCount} Qs</span>

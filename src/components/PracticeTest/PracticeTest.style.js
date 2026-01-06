@@ -83,6 +83,14 @@ export const TestButton = styled.button`
   }
 `;
 
+export const MobileInfo = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 786px) {
+    display: none;
+  }
+`;
+
 // background-color: ${(props) =>
 //   props.status === "completed"
 //     ? props.theme.mode === "dark"
