@@ -174,7 +174,7 @@ button {
 function App() {
   const { name } = useSelector((state) => state.theme);
   return (
-    <ThemeProvider theme={name === "DARK" ? LIGHT_THEME : DARK_THEME}>
+    <ThemeProvider theme={name === "LIGHT" ? LIGHT_THEME : DARK_THEME}>
       <GlobalStyle />
       <Router>
         <Routes>
