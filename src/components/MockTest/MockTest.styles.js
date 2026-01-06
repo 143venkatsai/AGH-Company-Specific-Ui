@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 export const TestContainer = styled.div`
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+
   border: 1px solid ${(props) => props.theme.border_new};
   background-color: ${(props) => props.theme.background_new};
   padding: 12px 16px;
   border-radius: 8px;
+
   display: flex;
   flex-direction: column;
   gap: 28px;
-
-  width: 100% !important;
-  box-sizing: border-box;
 `;
 
 export const TestTop = styled.div`

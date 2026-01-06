@@ -45,6 +45,8 @@ export const TabsSection = styled.section`
   flex-direction: column;
   gap: 32px;
   flex: 1;
+  width: 100%;
+  box-sizing: border-box;
 
   @media screen and (max-width: 786px) {
     order: 2;
@@ -75,6 +77,7 @@ export const PracticeTestsContainer = styled.div`
 export const MockTestContainer = styled.section`
   display: grid;
   gap: 20px;
+  width: 100%;
   box-sizing: border-box;
 
   grid-template-columns: 1fr;

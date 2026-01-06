@@ -3,21 +3,22 @@ import styled from "styled-components";
 export const TabsContainer = styled.div`
   display: flex;
   gap: 24px;
-  margin-op: 16px;
+
+  margin-bottom: 16px;
+  width: 100%;
+
   border-bottom: 1px solid ${(props) => props.theme.card_border_new};
-  width: full;
+
   position: sticky;
   top: 73px;
-  z-index: 1000;
-  background-color: ${(props) => props.theme.background_new};
-  padding-top: 12px;
-  border-radius: 8px;
   z-index: 100;
-  padding-left: 10px;
+
+  background-color: ${(props) => props.theme.background_new};
+  padding: 12px 0 0 0;
+  box-sizing: border-box;
 
   @media screen and (max-width: 786px) {
     top: 57px;
-    padding-left: 0px;
   }
 `;
 
