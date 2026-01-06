@@ -66,8 +66,8 @@ export const TestInfoLabel = styled.div`
 
 export const TestButton = styled.button`
   background-color: ${(props) =>
-    props.status === "completed" ? "#e6f7f1" : "#FC2947"};
-  color: ${(props) => (props.status === "completed" ? "#009b68" : "#FFFFFF")};
+    props.status === "Completed" ? "#e6f7f1" : "#FC2947"};
+  color: ${(props) => (props.status === "Completed" ? "#009b68" : "#FFFFFF")};
   padding: ${(props) =>
     props.status === "completed" ? "6px 20px" : "8px 20px"};
   border-radius: 4px;

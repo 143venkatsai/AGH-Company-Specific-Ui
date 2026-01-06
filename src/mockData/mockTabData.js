@@ -5,12 +5,12 @@ export const mockTabData = [
     questions: 20,
     durationMinutes: 30,
     sections: ["Aptitude", "Technical", "Coding"],
-    status: "completed",
+    status: "Completed",
     marks: {
       scored: 25,
       total: 100,
     },
-    action: "completed",
+    action: "Completed",
   },
   {
     id: 2,
@@ -18,8 +18,8 @@ export const mockTabData = [
     questions: 20,
     durationMinutes: 30,
     sections: ["Aptitude", "Technical", "Coding"],
-    status: "not_started",
-    action: "start",
+    status: "not_Started",
+    action: "Start",
   },
   {
     id: 3,
@@ -27,8 +27,8 @@ export const mockTabData = [
     questions: 20,
     durationMinutes: 30,
     sections: ["Aptitude", "Technical", "Coding"],
-    status: "not_started",
-    action: "start",
+    status: "not_Started",
+    action: "Start",
   },
   {
     id: 4,
@@ -36,8 +36,8 @@ export const mockTabData = [
     questions: 20,
     durationMinutes: 30,
     sections: ["Aptitude", "Technical", "Coding"],
-    status: "not_started",
-    action: "start",
+    status: "not_Started",
+    action: "Start",
   },
   {
     id: 5,
@@ -45,8 +45,8 @@ export const mockTabData = [
     questions: 20,
     durationMinutes: 30,
     sections: ["Aptitude", "Technical", "Coding"],
-    status: "not_started",
-    action: "start",
+    status: "not_Started",
+    action: "Start",
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ export const mockTabData = [
     questions: 20,
     durationMinutes: 30,
     sections: ["Aptitude", "Technical", "Coding"],
-    status: "not_started",
-    action: "start",
+    status: "not_Started",
+    action: "Start",
   },
 ];

@@ -9,7 +9,7 @@ export const practiceTabData = [
         questionsCount: 20,
         codingQuestions: 0,
         durationMins: 30,
-        status: "completed",
+        status: "Completed",
       },
       {
         id: "apt-2",
@@ -18,7 +18,7 @@ export const practiceTabData = [
         questionsCount: 30,
         codingQuestions: 0,
         durationMins: 30,
-        status: "start",
+        status: "Start",
       },
       {
         id: "apt-3",
@@ -27,7 +27,7 @@ export const practiceTabData = [
         questionsCount: 30,
         codingQuestions: 0,
         durationMins: 30,
-        status: "start",
+        status: "Start",
       },
       {
         id: "apt-4",
@@ -36,7 +36,7 @@ export const practiceTabData = [
         questionsCount: 30,
         codingQuestions: 0,
         durationMins: 30,
-        status: "start",
+        status: "Start",
       },
     ],
   },
@@ -51,7 +51,7 @@ export const practiceTabData = [
         codingQuestions: 2,
         questionsCount: 10,
         durationMins: 30,
-        status: "completed",
+        status: "Completed",
       },
       {
         id: "tech-2",
@@ -60,7 +60,7 @@ export const practiceTabData = [
         codingQuestions: 2,
         questionsCount: 30,
         durationMins: 30,
-        status: "completed",
+        status: "Completed",
       },
       {
         id: "tech-3",
@@ -69,7 +69,7 @@ export const practiceTabData = [
         codingQuestions: 2,
         questionsCount: 0,
         durationMins: 30,
-        status: "completed",
+        status: "Completed",
       },
       {
         id: "tech-4",
@@ -78,7 +78,7 @@ export const practiceTabData = [
         codingQuestions: 0,
         questionsCount: 30,
         durationMins: 30,
-        status: "start",
+        status: "Start",
       },
     ],
   },

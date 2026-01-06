@@ -54,7 +54,7 @@ const MockTest = ({ tabDetails }) => {
           </TopicsList>
         </TestMiddle>
 
-        {status === "completed" ? (
+        {status === "Completed" ? (
           <TestBottom>
             <TestBottomLeft>
               <p>Marks :</p> <span>{marks.scored}</span>
