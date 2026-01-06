@@ -1,18 +1,28 @@
 import styled from "styled-components";
 
 export const CompanyHeroCardWrapper = styled.div`
-  border: 1px solid #e4e4e7;
+  border: 1px solid ${(props) => props.theme.border_new};
+  background-color: ${(props) => props.theme.background_new};
   padding: 20px;
   display: flex;
   align-items: center;
   gap: 20px;
   border-radius: 20px;
+
+  @media screen and (max-width: 786px) {
+    flex-direction: column;
+  }
 `;
 
 export const CompanyLogo = styled.img`
-  width: auto;
+  width: 211px;
   height: 137px;
   border-radius: 8px;
+
+  @media screen and (max-width: 786px) {
+    width: 100%;
+    height: 209px;
+  }
 `;
 
 export const CompanyInfo = styled.div`
@@ -30,14 +40,18 @@ export const CompanyInfoTop = styled.div`
 export const CompanyName = styled.h2`
   font-size: 24px;
   font-weight: 600;
-  color: #262626;
+  color: ${(props) => props.theme.text.primary};
   margin: 0;
+
+  @media screen and (max-width: 786px) {
+    font-size: 20px;
+  }
 `;
 
 export const CompanyTagline = styled.p`
   font-size: 14px;
   font-weight: 400;
-  color: #6e6e6e;
+  color: ${(props) => props.theme.card_new_text};
   margin: 0;
 `;
 
@@ -45,16 +59,24 @@ export const CompanyInfoBottom = styled.div`
   display: flex;
   align-items: center;
   gap: 40px;
+
+  @media screen and (max-width: 786px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 `;
 
 export const InfoItem = styled.div`
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 `;
 
 export const InfoLogoContainer = styled.div`
-  background-color: #e6f7f1;
+  background-color: ${(props) =>
+    props.theme === "LIGHT" ? props.bg : props.darkBg};
+  color: ${(props) => (props.theme === "LIGHT" ? props.iconColor : props.bg)};
   height: 44px;
   width: 44px;
   display: flex;
@@ -72,11 +94,35 @@ export const InfoTextContainer = styled.div`
 export const InfoLabel = styled.p`
   font-size: 12px;
   font-weight: 400;
-  color: #9b9b9b;
+  color: ${(props) => props.theme.card_label_text};
 `;
 
 export const InfoLabelItems = styled.div`
-  font-size: 16px;
-  color: #515151;
-  font-weight: 400;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+
+  span {
+    font-size: 16px;
+    color: ${(props) => props.theme.card_label_text_2};
+    position: relative;
+    padding-left: 12px;
+  }
+
+  span:first-child {
+    padding-left: 0;
+  }
+
+  span:first-child::before {
+    content: none;
+  }
+
+  span:not(:first-child)::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: ${(props) => props.theme.card_label_text_2};
+    font-size: 18px;
+    line-height: 1;
+  }
 `;

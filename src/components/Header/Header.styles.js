@@ -3,10 +3,14 @@ import styled from "styled-components";
 export const HeaderWrapper = styled.header`
   width: 100%;
   height: 73px;
-  background: #ffffff;
-  border-bottom: 1px solid #eaeaea;
+  background: ${(props) => props.theme.body.primary.base};
+  border-bottom: 1px solid ${(props) => props.theme.border.primary};
   display: flex;
   align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   @media (max-width: 1024px) {
     height: 58px;
@@ -45,28 +49,6 @@ export const LogoImg = styled.img`
   }
 `;
 
-export const LogoText = styled.div`
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-
-  strong {
-    font-size: 14px;
-    font-weight: 700;
-    color: #000;
-  }
-
-  span {
-    font-size: 11px;
-    font-weight: 600;
-    color: #444;
-  }
-
-  @media (max-width: 1024px) {
-    display: none;
-  }
-`;
-
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
@@ -83,9 +65,7 @@ export const NavItem = styled.div`
   gap: 6px;
 
   font-size: 14px;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  color: #343434;
+  color: ${(props) => props.theme.text.neutral20};
   cursor: pointer;
   position: relative;
 
@@ -133,7 +113,7 @@ export const UserName = styled.div`
   font-size: 14px;
   font-weight: 500;
   font-family: "Inter", sans-serif;
-  color: #333333;
+  color: ${(props) => props.theme.text.neutral20};
 
   @media (max-width: 1023px) {
     display: none;

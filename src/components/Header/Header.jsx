@@ -8,7 +8,6 @@ import {
   HeaderInner,
   LogoSection,
   LogoImg,
-  LogoText,
   Nav,
   NavItem,
   RightSection,
@@ -33,7 +32,7 @@ const Header = () => {
           <LogoImg src={aghLogo} alt="Aptitude Guru" />
         </LogoSection>
 
-        <Nav>
+        <Nav className="poppins-medium">
           <NavItem>Home</NavItem>
           <NavItem>Practice</NavItem>
           <NavItem>Notes</NavItem>
@@ -42,7 +41,7 @@ const Header = () => {
           </NavItem>
 
           <NavItem>Leaderboard</NavItem>
-          <NavItem $active >Company Specific</NavItem>
+          <NavItem $active>Company Specific</NavItem>
         </Nav>
 
         <RightSection>

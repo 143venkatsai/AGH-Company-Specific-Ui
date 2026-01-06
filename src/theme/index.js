@@ -5,8 +5,24 @@ export const LIGHT_THEME = {
   card_white: "#ffffff",
   border_100: "#FFFFFF",
   search_input: "#F2F2F2",
+  border_new: "#E4E4E7",
+  background_new: "#ffffff",
+  card_new_text: "#6e6e6e",
+  card_border_new: "#e9e9e9",
+  card_label_text: "#9B9B9B",
+  card_label_text_2: "#515151",
+  primary_text: "#262626",
+  icon_bg: "#ffeaed",
+  icon_color: "#FD70840",
+  card_label_text_3: "#515151",
+  card_label_text_4: "#515151",
+  percentage_bg: "#effbf0",
+  percentage_text: "#449648",
+  card_label_bg: "#f3f3f3",
+  marks_text: "#9b9b9b",
+  score_text: "#515151",
   primary: {
-    base: "#FC2947",
+    base: "#FD6A7F",
     hover: "#f3f4f6",
   },
 
@@ -18,7 +34,7 @@ export const LIGHT_THEME = {
   },
 
   body: {
-    light10:"",
+    light10: "",
     primary: {
       base: "#ffffff",
       hover: "#f3f4f6",
@@ -35,6 +51,7 @@ export const LIGHT_THEME = {
     neutral_gray_600: "#475569",
     neutral_gray_900: "#18181B",
     neutral20: "#343434",
+    new_text: "#000000",
   },
   border: {
     primary: "#dcdcdcff",
@@ -62,8 +79,24 @@ export const DARK_THEME = {
   card_white: "#343434",
   border_100: "#3B3B3B",
   search_input: "#404040",
+  border_new: "#43434300",
+  background_new: "#303030",
+  card_new_text: "#C5C5C5",
+  card_border_new: "#606060",
+  card_label_text: "#C5C5C5",
+  card_label_text_2: "#ffffff",
+  primary_text: "#ffffff",
+  icon_bg: "#FC294780",
+  icon_color: "#FEBDC6",
+  card_label_text_3: "#F4F4F4",
+  card_label_text_4: "#F8F8F8",
+  percentage_bg: "#44964880",
+  percentage_text: "#EFFBF0",
+  card_label_bg: "#262626",
+  marks_text: "#9B9B9B",
+  score_text: "#FFFFFF",
   primary: {
-    base: "#FC2947",
+    base: "#FD6A7F",
     hover: "#f3f4f6",
   },
   secondary: {
@@ -88,6 +121,7 @@ export const DARK_THEME = {
     neutral_gray_600: "#FFFFFF",
     neutral_gray_900: "#FFFFFF",
     neutral20: "#dcdcdc",
+    new_text: "#000000",
   },
 
   border: {

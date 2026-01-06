@@ -12,8 +12,9 @@ const BackButton = () => {
           fontSize: "18px",
           marginBottom: "16px",
           cursor: "pointer",
-          color: "#000000",
+          color: `${(props) => props.theme.text.new_text}`,
           fontWeight: "400",
+          margin: "0",
         }}
       >
         <ChevronLeft size={18} /> Back
