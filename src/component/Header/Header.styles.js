@@ -89,8 +89,8 @@ export const NavItem = styled.div`
   cursor: pointer;
   position: relative;
 
-  ${({ active }) =>
-    active &&
+  ${({ $active }) =>
+    $active &&
     `
     &::after {
       content: "";

@@ -42,7 +42,7 @@ const Header = () => {
           </NavItem>
 
           <NavItem>Leaderboard</NavItem>
-          <NavItem active>Company Specific</NavItem>
+          <NavItem $active >Company Specific</NavItem>
         </Nav>
 
         <RightSection>
