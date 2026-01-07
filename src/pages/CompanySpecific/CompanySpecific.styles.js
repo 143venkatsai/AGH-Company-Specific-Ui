@@ -69,6 +69,8 @@ export const PracticeTabTitle = styled.h2`
   font-size: 20px;
   font-weight: 600;
   font-style: semi-bold;
+  font-family: "Work Sans", sans-serif;
+
   color: ${(props) => props.theme.primary_text};
 `;
 

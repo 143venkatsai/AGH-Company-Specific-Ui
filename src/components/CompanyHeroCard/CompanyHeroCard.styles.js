@@ -42,6 +42,7 @@ export const CompanyName = styled.h2`
   font-weight: 600;
   color: ${(props) => props.theme.text.primary};
   margin: 0;
+  font-family: "Work Sans", sans-serif;
 
   @media screen and (max-width: 786px) {
     font-size: 20px;
@@ -51,6 +52,8 @@ export const CompanyName = styled.h2`
 export const CompanyTagline = styled.p`
   font-size: 14px;
   font-weight: 400;
+  font-family: "Inter", sans-serif;
+
   color: ${(props) => props.theme.card_new_text};
   margin: 0;
 `;
@@ -70,6 +73,8 @@ export const CompanyInfoBottom = styled.div`
 export const InfoItem = styled.div`
   display: flex;
   align-items: center;
+  font-family: "Inter", sans-serif;
+
   gap: 12px;
 `;
 

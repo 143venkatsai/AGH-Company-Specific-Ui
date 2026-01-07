@@ -44,6 +44,7 @@ export const TestTitle = styled.h3`
   font-size: 18px;
   font-weight: 500;
   font-style: medium;
+  font-family: "Work Sans", sans-serif;
   color: ${(props) => props.theme.primary_text};
 `;
 
@@ -63,6 +64,7 @@ export const TestInfoLabel = styled.div`
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
+    font-family: "Inter", sans-serif;
   }
 `;
 
@@ -81,6 +83,7 @@ export const TestMiddleName = styled.h3`
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
+  font-family: "Inter", sans-serif;
   color: ${(props) => props.theme.card_new_text};
 `;
 
@@ -97,6 +100,7 @@ export const TopicsList = styled.div`
     font-weight: 400;
     font-style: normal;
     padding: 4px 16px;
+    font-family: "Poppins", sans-serif;
   }
 `;
 
@@ -122,6 +126,7 @@ export const TestBottom = styled.div`
 export const TestBottomLeft = styled.div`
   display: flex;
   align-items: baseline;
+  font-family: "Inter", sans-serif;
 
   p {
     color: ${(props) => props.theme.marks_text};
@@ -160,7 +165,9 @@ export const TestBottomRight = styled.button`
     return isDark ? "#E6F7F1" : "#009b68";
   }};
 
-  padding: 6px 20px;
+  height: ${(props) => (props.status === "Completed" ? "28px" : "40px")};
+  font-family: "Poppins", sans-serif;
+
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;

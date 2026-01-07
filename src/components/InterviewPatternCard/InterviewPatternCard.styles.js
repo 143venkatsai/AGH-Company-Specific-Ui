@@ -11,12 +11,14 @@ export const CardTitle = styled.h3`
   font-size: 20px;
   font-weight: 600;
   font-style: semi-bold;
+  font-family: "Work Sans", sans-serif;
   color: ${(props) => props.theme.primary_text};
   margin-bottom: 4px;
 `;
 
 export const CardSubtitle = styled.p`
   font-size: 14px;
+  font-family: "Inter", sans-serif;
   color: ${(props) => props.theme.card_new_text};
   margin-bottom: 20px;
 `;
@@ -25,6 +27,7 @@ export const Item = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Inter", sans-serif;
   margin-top: 20px;
 `;
 

@@ -43,6 +43,8 @@ export const TestTitle = styled.h3`
   font-size: 18px;
   font-weight: 500;
   font-style: medium;
+  font-family: "Work Sans", sans-serif;
+
   color: ${(props) => props.theme.primary_text};
 `;
 
@@ -61,6 +63,7 @@ export const TestInfoLabel = styled.div`
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
+    font-family: "Inter", sans-serif;
   }
 `;
 
@@ -81,14 +84,19 @@ export const TestButton = styled.button`
     return isDark ? "#E6F7F1" : "#009b68";
   }};
 
-  padding: ${(props) =>
-    props.status === "Completed" ? "6px 20px" : "8px 20px"};
+  height: ${(props) => (props.status === "Completed" ? "28px" : "40px")};
+
+  font-family: "Poppins", sans-serif;
 
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
   width: 120px;
   text-align: center;
+
+  @media screen and (max-width: 786px) {
+    width: 100%;
+  }
 `;
 
 export const MobileInfo = styled.div`
