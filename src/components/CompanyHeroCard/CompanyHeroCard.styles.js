@@ -75,8 +75,9 @@ export const InfoItem = styled.div`
 
 export const InfoLogoContainer = styled.div`
   background-color: ${(props) =>
-    props.theme === "LIGHT" ? props.bg : props.darkBg};
-  color: ${(props) => (props.theme === "LIGHT" ? props.iconColor : props.bg)};
+    props.theme.mode === "LIGHT" ? props.bg : props.darkBg};
+  color: ${(props) =>
+    props.theme.mode === "LIGHT" ? props.lightColor : props.bg};
   height: 44px;
   width: 44px;
   display: flex;

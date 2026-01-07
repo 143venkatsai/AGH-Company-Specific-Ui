@@ -9,6 +9,7 @@ import {
   PracticeTestsContainer,
   RightSideContainer,
   TabsSection,
+  TestMainContainer,
 } from "./CompanySpecific.styles";
 import BackButton from "../../components/ui/BackButton";
 import Header from "../../components/Header/Header";
@@ -41,7 +42,7 @@ const CompanySpecific = () => {
           <TabsSection>
             <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
             {activeTab === "practice" && (
-              <>
+              <TestMainContainer>
                 {practiceTabData.map((tabData, index) => (
                   <PracticeSection key={index}>
                     <PracticeTabTitle>{tabData.category}</PracticeTabTitle>
@@ -52,7 +53,7 @@ const CompanySpecific = () => {
                     </PracticeTestsContainer>
                   </PracticeSection>
                 ))}
-              </>
+              </TestMainContainer>
             )}
 
             {activeTab === "mock" && (

@@ -1,6 +1,7 @@
 // theme/index.js
 export const LIGHT_THEME = {
   link_sky_blue: "#3C9BD9",
+  mode: "LIGHT",
   blue_900: "#1500FF",
   card_white: "#ffffff",
   border_100: "#FFFFFF",
@@ -75,6 +76,7 @@ export const LIGHT_THEME = {
 
 export const DARK_THEME = {
   link_sky_blue: "#3C9BD9",
+  mode: "DARK",
   blue_900: "#FFFFFF",
   card_white: "#343434",
   border_100: "#3B3B3B",
@@ -87,7 +89,7 @@ export const DARK_THEME = {
   card_label_text_2: "#ffffff",
   primary_text: "#ffffff",
   icon_bg: "#FC294780",
-  icon_color: "#FD7084",
+  icon_color: "#FEBDC6",
   card_label_text_3: "#F4F4F4",
   card_label_text_4: "#F8F8F8",
   percentage_bg: "#44964880",

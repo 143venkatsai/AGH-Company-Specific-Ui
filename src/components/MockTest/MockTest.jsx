@@ -60,7 +60,7 @@ const MockTest = ({ tabDetails }) => {
               <p>Marks :</p> <span>{marks.scored}</span>
               <h5>/{marks.total}</h5>
             </TestBottomLeft>
-            <TestBottomRight>{action}</TestBottomRight>
+            <TestBottomRight status={status}>{action}</TestBottomRight>
           </TestBottom>
         ) : (
           <FullButton>{action}</FullButton>

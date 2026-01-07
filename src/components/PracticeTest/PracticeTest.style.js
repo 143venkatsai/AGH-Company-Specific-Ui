@@ -65,22 +65,30 @@ export const TestInfoLabel = styled.div`
 `;
 
 export const TestButton = styled.button`
-  background-color: ${(props) =>
-    props.status === "Completed" ? "#e6f7f1" : "#FC2947"};
-  color: ${(props) => (props.status === "Completed" ? "#009b68" : "#FFFFFF")};
+  background-color: ${(props) => {
+    const isCompleted = props.status === "Completed";
+    const isDark = props.theme.mode === "DARK";
+
+    if (!isCompleted) return "#FC2947";
+    return isDark ? "#00AA7280" : "#e6f7f1";
+  }};
+
+  color: ${(props) => {
+    const isCompleted = props.status === "Completed";
+    const isDark = props.theme.mode === "DARK";
+
+    if (!isCompleted) return "#FFFFFF";
+    return isDark ? "#E6F7F1" : "#009b68";
+  }};
+
   padding: ${(props) =>
-    props.status === "completed" ? "6px 20px" : "8px 20px"};
+    props.status === "Completed" ? "6px 20px" : "8px 20px"};
+
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  font-style: medium;
   width: 120px;
   text-align: center;
-
-  @media screen and (max-width: 786px) {
-    width: 100%;
-  }
 `;
 
 export const MobileInfo = styled.div`

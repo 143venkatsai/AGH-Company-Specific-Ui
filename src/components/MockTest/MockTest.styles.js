@@ -144,8 +144,22 @@ export const TestBottomLeft = styled.div`
 `;
 
 export const TestBottomRight = styled.button`
-  background-color: #e6f7f1;
-  color: #009b68;
+  background-color: ${(props) => {
+    const isCompleted = props.status === "Completed";
+    const isDark = props.theme.mode === "DARK";
+
+    if (!isCompleted) return "#FC2947";
+    return isDark ? "#00AA7280" : "#e6f7f1";
+  }};
+
+  color: ${(props) => {
+    const isCompleted = props.status === "Completed";
+    const isDark = props.theme.mode === "DARK";
+
+    if (!isCompleted) return "#FFFFFF";
+    return isDark ? "#E6F7F1" : "#009b68";
+  }};
+
   padding: 6px 20px;
   border-radius: 4px;
   font-size: 14px;

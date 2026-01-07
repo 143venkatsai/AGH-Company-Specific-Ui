@@ -43,7 +43,7 @@ const companyInfoDetails = [
     id: 3,
     icon: <HiOutlineClock size={32} />,
     iconBg: "#E9F3F9",
-    iconColor: "#FDA829",
+    iconColor: "#1A5D88",
     iconBgDark: "#2583C080",
     infoTitle: "Estimated Prep Time",
     infoItems: ["40 - 50 Hours"],
@@ -63,7 +63,11 @@ const CompanyHeroCard = () => {
           <CompanyInfoBottom>
             {companyInfoDetails.map((item, index) => (
               <InfoItem key={index}>
-                <InfoLogoContainer bg={item.iconBg} darkBg={item.iconBgDark}>
+                <InfoLogoContainer
+                  bg={item.iconBg}
+                  darkBg={item.iconBgDark}
+                  lightColor={item.iconColor}
+                >
                   {item.icon}
                 </InfoLogoContainer>
                 <InfoTextContainer>

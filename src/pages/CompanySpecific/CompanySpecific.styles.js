@@ -43,7 +43,7 @@ export const MainContainer = styled.div`
 export const TabsSection = styled.section`
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
   flex: 1;
   width: 100%;
   box-sizing: border-box;
@@ -51,6 +51,12 @@ export const TabsSection = styled.section`
   @media screen and (max-width: 786px) {
     order: 2;
   }
+`;
+
+export const TestMainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 `;
 
 export const PracticeSection = styled.div`

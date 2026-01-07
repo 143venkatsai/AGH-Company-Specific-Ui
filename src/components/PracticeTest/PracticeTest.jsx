@@ -27,9 +27,9 @@ const PracticeTest = ({ testDetails }) => {
         <TestLeft>
           <TestIcon>
             {type === "aptitude" ? (
-              <LuFileText size={32} />
+              <LuFileText size={32} strokeWidth={1.4} />
             ) : (
-              <LiaLaptopCodeSolid size={32} />
+              <LiaLaptopCodeSolid size={32} strokeWidth={0} />
             )}
           </TestIcon>
           <TestDetails>
