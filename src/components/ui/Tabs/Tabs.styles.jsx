@@ -4,7 +4,6 @@ export const TabsContainer = styled.div`
   display: flex;
   align-items: base-line;
   padding-top: 12px;
-  gap: 24px;
 
   margin-bottom: 16px;
   width: 100%;
@@ -25,7 +24,7 @@ export const TabsContainer = styled.div`
   height: 48px;
   box-sizing: border-box;
 
-  overflow: hidden; /* prevents active underline from cutting corners */
+  overflow: hidden;
 
   @media screen and (max-width: 786px) {
     top: 57px;
@@ -35,34 +34,33 @@ export const TabsContainer = styled.div`
 export const TabItem = styled.span`
   position: relative;
   cursor: pointer;
-  padding: 0 10px 10px;
+  padding: 0 16px;
 
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
   font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: ${(props) => (props.active ? 500 : 400)};
 
-  color: ${(props) =>
-    props.active
-      ? "#FC2947"
-      : props.theme.mode === "DARK"
-      ? "#FFFFFF"
-      : "#515151"};
+  color: ${(props) => {
+    if (props.active && props.theme.mode === "DARK") return "#FD546C";
+    if (props.active) return "#FC2947";
+    if (props.theme.mode === "DARK") return "#FFFFFF";
+    return "#515151";
+  }};
 
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, font-weight 0.2s ease;
 
-  /* Active indicator */
   &::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
     bottom: -1px;
-
     height: 2px;
-    background-color: #fc2947;
+
+    background-color: ${(props) =>
+      props.active && props.theme.mode === "DARK" ? "#FD546C" : "#FC2947"};
 
     opacity: ${(props) => (props.active ? 1 : 0)};
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
   }
 `;

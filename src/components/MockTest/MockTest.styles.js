@@ -72,11 +72,6 @@ export const TestMiddle = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 0px 24px;
-
-  @media screen and (max-width: 786px) {
-    padding: 0px 12px;
-  }
 `;
 
 export const TestMiddleName = styled.h3`
