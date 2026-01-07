@@ -28,7 +28,7 @@ const MockTest = ({ tabDetails }) => {
       <TestContainer>
         <TestTop>
           <TestIcon>
-            <LuClipboardList size={32} />
+            <LuClipboardList size={32} strokeWidth={1.5} />
           </TestIcon>
           <TestDetails>
             <TestTitle>{title}</TestTitle>
