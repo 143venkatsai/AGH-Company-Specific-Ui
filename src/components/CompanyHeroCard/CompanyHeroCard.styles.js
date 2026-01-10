@@ -19,7 +19,12 @@ export const CompanyLogo = styled.img`
   height: 137px;
   border-radius: 8px;
 
-  @media (min-width: 769px) and (max-width: 1024px) {
+  @media (min-width: 851px) and (max-width: 1024px) {
+    height: 250px;
+    width: 330px;
+  }
+
+  @media (min-width: 769px) and (max-width: 850px) {
     height: 250px;
     width: 280px;
   }
