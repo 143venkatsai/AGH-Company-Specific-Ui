@@ -9,7 +9,7 @@ export const TestContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -94,7 +94,7 @@ export const TestButton = styled.button`
   width: 120px;
   text-align: center;
 
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 `;
