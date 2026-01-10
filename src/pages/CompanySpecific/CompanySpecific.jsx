@@ -37,8 +37,8 @@ const CompanySpecific = () => {
         {/* Hero Card */}
         <CompanyHeroCard />
 
-        {/* Tabs */}
         <MainContainer>
+          {/* Tabs */}
           <TabsSection>
             <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
             {activeTab === "practice" && (

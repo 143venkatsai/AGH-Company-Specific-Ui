@@ -26,7 +26,7 @@ export const TabsContainer = styled.div`
 
   overflow: hidden;
 
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 1024px) {
     top: 57px;
   }
 `;

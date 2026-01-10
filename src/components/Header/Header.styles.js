@@ -26,7 +26,15 @@ export const HeaderInner = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 1024px) {
+  // Tab View
+  @media (min-width: 769px) and (max-width: 1024px) {
+    padding: 0 24px;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  // Mobile View
+  @media (max-width: 768px) {
     justify-content: flex-start;
     gap: 8px;
     padding: 0 16px;

@@ -9,7 +9,7 @@ export const CompanyHeroCardWrapper = styled.div`
   gap: 20px;
   border-radius: 20px;
 
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -19,7 +19,12 @@ export const CompanyLogo = styled.img`
   height: 137px;
   border-radius: 8px;
 
-  @media screen and (max-width: 786px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
+    height: 250px;
+    width: 280px;
+  }
+
+  @media screen and (max-width: 768px) {
     width: 100%;
     height: 209px;
   }
@@ -62,6 +67,12 @@ export const CompanyInfoBottom = styled.div`
   display: flex;
   align-items: center;
   gap: 40px;
+
+  @media (min-width: 789px) and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 
   @media screen and (max-width: 786px) {
     flex-direction: column;

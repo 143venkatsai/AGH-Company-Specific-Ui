@@ -20,7 +20,7 @@ export const CompanyContainer = styled.div`
   /* Tablets */
   @media (max-width: 1024px) {
     max-width: 960px;
-    padding: 16px;
+    padding: 32px;
   }
 
   /* Mobile */
@@ -35,7 +35,7 @@ export const MainContainer = styled.div`
   gap: 20px;
   align-items: flex-start;
 
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
 `;
@@ -48,7 +48,7 @@ export const TabsSection = styled.section`
   width: 100%;
   box-sizing: border-box;
 
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 1024px) {
     order: 2;
   }
 `;
@@ -106,7 +106,7 @@ export const RightSideContainer = styled.div`
   top: 90px;
   z-index: 100;
 
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 1024px) {
     position: static;
     width: 100%;
     order: 1;
