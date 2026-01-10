@@ -68,13 +68,13 @@ export const CompanyInfoBottom = styled.div`
   align-items: center;
   gap: 40px;
 
-  @media (min-width: 789px) and (max-width: 1024px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
   }
 
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
