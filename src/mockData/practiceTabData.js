@@ -10,6 +10,7 @@ export const practiceTabData = [
         codingQuestions: 0,
         durationMins: 30,
         status: "Completed",
+        path: "/aptitude/test-1/result",
       },
       {
         id: "apt-2",
@@ -52,6 +53,7 @@ export const practiceTabData = [
         questionsCount: 10,
         durationMins: 30,
         status: "Completed",
+        path: "/technical/test-1/result",
       },
       {
         id: "tech-2",
@@ -61,6 +63,7 @@ export const practiceTabData = [
         questionsCount: 30,
         durationMins: 30,
         status: "Completed",
+        path: "/technical/test-1/result",
       },
       {
         id: "tech-3",
@@ -70,6 +73,7 @@ export const practiceTabData = [
         questionsCount: 0,
         durationMins: 30,
         status: "Completed",
+        path: "/technical/test-1/result",
       },
       {
         id: "tech-4",

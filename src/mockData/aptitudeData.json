@@ -1,0 +1,80 @@
+{
+  "category": "Aptitude",
+  "quizTitle": "Practice Test 1",
+  "totalQuestions": 5,
+  "duration": 30,
+  "correct": 4,
+  "wrong": 4,
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": "Easy",
+      "question": "Which number is divisible by 2?",
+      "options": [
+        { "id": "A", "value": 200 },
+        { "id": "B", "value": 72 },
+        { "id": "C", "value": 200 },
+        { "id": "D", "value": 150 }
+      ],
+      "correctOptionId": "C",
+      "selectedOptionId": "C",
+      "explanation": "200 is divisible by 2 because it is an even number."
+    },
+    {
+      "id": 2,
+      "difficulty": "Easy",
+      "question": "Which number is divisible by 2?",
+      "options": [
+        { "id": "A", "value": 200 },
+        { "id": "B", "value": 200 },
+        { "id": "C", "value": 72 },
+        { "id": "D", "value": 150 }
+      ],
+      "correctOptionId": "B",
+      "selectedOptionId": "C",
+      "explanation": "All even numbers are divisible by 2. 200 is divisible by 2."
+    },
+    {
+      "id": 3,
+      "difficulty": "Medium",
+      "question": "Which number is divisible by 2?",
+      "options": [
+        { "id": "A", "value": 200 },
+        { "id": "B", "value": 72 },
+        { "id": "C", "value": 200 },
+        { "id": "D", "value": 150 }
+      ],
+      "correctOptionId": "C",
+      "selectedOptionId": "C",
+      "explanation": "200 is an even number and divisible by 2."
+    },
+    {
+      "id": 4,
+      "difficulty": "Hard",
+      "question": "Which number is divisible by 2?",
+      "options": [
+        { "id": "A", "value": 200 },
+        { "id": "B", "value": 72 },
+        { "id": "C", "value": 200 },
+        { "id": "D", "value": 150 }
+      ],
+      "correctOptionId": "C",
+      "selectedOptionId": "C",
+      "explanation": "200 is divisible by 2 since it ends in 0."
+    },
+    {
+      "id": 5,
+      "difficulty": "Easy",
+      "question": "Which number is divisible by 2?",
+      "options": [
+        { "id": "A", "value": 200 },
+        { "id": "B", "value": 200 },
+        { "id": "C", "value": 72 },
+        { "id": "D", "value": 150 }
+      ],
+      "correctOptionId": "B",
+      "selectedOptionId": "C",
+      "explanation": "200 is divisible by 2 because it is even."
+    }
+  ]
+}

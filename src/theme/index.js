@@ -22,6 +22,14 @@ export const LIGHT_THEME = {
   card_label_bg: "#f3f3f3",
   marks_text: "#9b9b9b",
   score_text: "#515151",
+  result_btn_bg: "#E6F7F1",
+  result_btn_text: "#009B68",
+  result_wrong_bg: "#FF3333",
+  result_que_text: "#737375",
+  result_que_title: "#434343",
+  option_border: "#C5C5C5",
+  question_item_text: "#262626",
+  question_label: "#515151",
   primary: {
     base: "#FD6A7F",
     hover: "#f3f4f6",
@@ -54,9 +62,57 @@ export const LIGHT_THEME = {
     neutral20: "#343434",
     new_text: "#000000",
   },
+
   border: {
     primary: "#dcdcdcff",
     secondary: "#d5d5d5ff",
+  },
+
+  difficulty: {
+    easy: {
+      bg: "#E6F7F1",
+      text: "#009B68",
+    },
+    medium: {
+      bg: "#FEE4BD",
+      text: "#E69925",
+    },
+    hard: {
+      bg: "#FFE6E6",
+      text: "#FF3333",
+    },
+  },
+
+  option: {
+    default: {
+      // bg: "#f3f3f3",
+      border: "#C5C5C5",
+    },
+    correct: {
+      bg: "#E6F7F1",
+      border: "#33BB8E",
+    },
+    wrong: {
+      bg: "#FFE6E6",
+      border: "#FF5454",
+    },
+  },
+
+  codingQuestion: {
+    failed: {
+      border: "#FF3333",
+      bg: "#FFE6E6",
+      text: "#FF3333",
+    },
+    success: {
+      border: "#00AA72",
+      bg: "#E6F7F1",
+      text: "#00AA72",
+    },
+  },
+  submissionStatus: {
+    failed: "#FF3333",
+    success: "#33BB8E",
   },
 
   //shadows variations
@@ -97,6 +153,14 @@ export const DARK_THEME = {
   card_label_bg: "#262626",
   marks_text: "#9B9B9B",
   score_text: "#FFFFFF",
+  result_btn_bg: "#004730",
+  result_btn_text: "#E6F7F1",
+  result_wrong_bg: "#FF5454",
+  result_que_text: "#FFFFFF",
+  result_que_title: "#F8F8F8",
+  option_border: "#656565",
+  question_item_text: "#C5C5C5",
+  question_label: "#C5C5C5",
   primary: {
     base: "#FD6A7F",
     hover: "#f3f4f6",
@@ -129,6 +193,51 @@ export const DARK_THEME = {
   border: {
     primary: "#777777ff",
     secondary: "#666666ff",
+  },
+
+  difficulty: {
+    easy: {
+      bg: "#004730",
+      text: "#E6F7F1",
+    },
+    medium: {
+      bg: "#6A4711",
+      text: "#E6F7F1",
+    },
+    hard: {
+      bg: "#6B0000",
+      text: "#E6F7F1",
+    },
+  },
+  option: {
+    default: {
+      // bg: "#262626",
+      border: "#656565",
+    },
+    correct: {
+      bg: "#8AD8BE",
+      border: "#33BB8E",
+    },
+    wrong: {
+      bg: "#FFB0B0",
+      border: "#FF3333",
+    },
+  },
+  codingQuestion: {
+    failed: {
+      border: "#FF5454",
+      bg: "#303030",
+      text: "#FF5454",
+    },
+    success: {
+      border: "#33BB8E",
+      bg: "#303030",
+      text: "#33BB8E",
+    },
+  },
+  submissionStatus: {
+    failed: "#FF5454",
+    success: "#33BB8E",
   },
 
   //shadows variations

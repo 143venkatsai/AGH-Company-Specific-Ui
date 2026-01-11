@@ -16,10 +16,19 @@ import {
   TestLeft,
   TestTitle,
 } from "./PracticeTest.style";
+import { useNavigate } from "react-router-dom";
 
 const PracticeTest = ({ testDetails }) => {
-  const { title, type, questionsCount, codingQuestions, durationMins, status } =
-    testDetails;
+  const {
+    title,
+    type,
+    questionsCount,
+    codingQuestions,
+    durationMins,
+    status,
+    path,
+  } = testDetails;
+  const navigate = useNavigate();
 
   return (
     <>
@@ -54,7 +63,9 @@ const PracticeTest = ({ testDetails }) => {
             </TestInfo>
           </TestDetails>
         </TestLeft>
-        <TestButton status={status}>{status}</TestButton>
+        <TestButton status={status} onClick={() => navigate(path)}>
+          {status}
+        </TestButton>
       </TestContainer>
     </>
   );

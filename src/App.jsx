@@ -2,8 +2,12 @@ import React from "react";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { LIGHT_THEME, DARK_THEME } from "./theme";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import CompanySpecific from "./pages/CompanySpecific/CompanySpecific";
+
 import { useSelector } from "react-redux";
+
+import CompanySpecific from "./pages/CompanySpecific/CompanySpecific";
+import AptitudeTest from "./pages/AptitudeTest/AptitudeTest";
+import TechnicalTest from "./pages/TechnicalTest/TechnicalTest";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -174,11 +178,13 @@ button {
 function App() {
   const { name } = useSelector((state) => state.theme);
   return (
-    <ThemeProvider theme={name === "DARK" ? LIGHT_THEME : DARK_THEME}>
+    <ThemeProvider theme={name === "LIGHT" ? LIGHT_THEME : DARK_THEME}>
       <GlobalStyle />
       <Router>
         <Routes>
           <Route path="/" element={<CompanySpecific />} />
+          <Route path="/aptitude/test-1/result" element={<AptitudeTest />} />
+          <Route path="/technical/test-1/result" element={<TechnicalTest />} />
         </Routes>
       </Router>
     </ThemeProvider>
