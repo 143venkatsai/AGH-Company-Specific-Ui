@@ -31,6 +31,10 @@ export const TestTitle = styled.h1`
   font-weight: 600;
   font-style: semi-bold;
   color: ${(props) => props.theme.primary_text};
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const TestStatus = styled.button`
@@ -108,4 +112,40 @@ export const TestWrongStatus = styled.div`
   align-items: center;
   background-color: ${(props) => props.theme.result_wrong_bg};
   color: ${(props) => props.theme.primary_text};
+`;
+
+// Mock Test Score
+
+export const MockTestResult = styled.div`
+  display: flex;
+  align-items: baseline;
+`;
+
+export const ResultLabel = styled.span`
+  font-family: Work Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+
+  color: ${({ result, theme }) =>
+    result === "pass" ? theme.mockTestResult.pass : theme.mockTestResult.fail};
+`;
+
+export const ScoredMarks = styled.span`
+  font-family: Work Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 40px;
+  margin-left: 6px;
+  color: ${({ result, theme }) =>
+    result === "pass" ? theme.mockTestResult.pass : theme.mockTestResult.fail};
+`;
+
+export const TotalMarks = styled.span`
+  font-family: Work Sans;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+
+  color: ${({ theme }) => theme.mockTestResult.total};
 `;

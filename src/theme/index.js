@@ -110,6 +110,13 @@ export const LIGHT_THEME = {
       text: "#00AA72",
     },
   },
+
+  mockTestResult: {
+    pass: "#00AA72",
+    fail: "#FF3333",
+    total: "#515151",
+  },
+
   submissionStatus: {
     failed: "#FF3333",
     success: "#33BB8E",
@@ -235,6 +242,13 @@ export const DARK_THEME = {
       text: "#33BB8E",
     },
   },
+
+  mockTestResult: {
+    pass: "#00AA72",
+    fail: "#FF3333",
+    total: "#C5C5C5",
+  },
+
   submissionStatus: {
     failed: "#FF5454",
     success: "#33BB8E",

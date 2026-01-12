@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   DifficultyBadge,
   Explanation,
@@ -21,26 +21,17 @@ const QuestionItem = ({ questionInfo }) => {
     selectedOptionId,
     explanation,
   } = questionInfo;
-  const [userSelectedOption, setUserSelectedOption] = useState(null);
 
   const getOptionState = (optionId) => {
-    if (!userSelectedOption) return "default";
+    if (!selectedOptionId) return "default";
 
     if (optionId === correctOptionId) return "correct";
 
-    if (
-      optionId === userSelectedOption &&
-      userSelectedOption !== correctOptionId
-    ) {
+    if (optionId === selectedOptionId && selectedOptionId !== correctOptionId) {
       return "wrong";
     }
 
     return "default";
-  };
-
-  const handleOptionClick = (optionId) => {
-    if (userSelectedOption) return;
-    setUserSelectedOption(optionId);
   };
 
   return (
@@ -57,16 +48,9 @@ const QuestionItem = ({ questionInfo }) => {
           <OptionsGrid>
             {options.map((option) => {
               const optionState = getOptionState(option.id);
-              const isSelected = option.id === userSelectedOption;
 
               return (
-                <Option
-                  key={option.id}
-                  optionState={optionState}
-                  isSelected={isSelected}
-                  onClick={() => handleOptionClick(option.id)}
-                  style={{ cursor: `${userSelectedOption ? "" : "pointer"}` }}
-                >
+                <Option key={option.id} optionState={optionState}>
                   {option.id}. {option.value}
                 </Option>
               );

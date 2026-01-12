@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ResultPageContainer = styled.div`
   width: 100%;
   margin: 0 auto;
-  padding: 24px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -27,7 +27,7 @@ export const ResultPageContainer = styled.div`
   /* Mobile */
   @media (max-width: 768px) {
     max-width: 100%;
-    padding: 16px;
+    padding: 20px;
     gap: 32px;
   }
 `;

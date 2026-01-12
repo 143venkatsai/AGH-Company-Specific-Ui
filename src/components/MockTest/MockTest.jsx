@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import { LuClipboardList } from "react-icons/lu";
 import { GoQuestion } from "react-icons/go";
 import { RxLapTimer } from "react-icons/rx";
@@ -21,11 +23,20 @@ import {
 } from "./MockTest.styles";
 
 const MockTest = ({ tabDetails }) => {
-  const { title, questions, durationMinutes, sections, status, marks, action } =
-    tabDetails;
+  const {
+    title,
+    questions,
+    durationMinutes,
+    sections,
+    status,
+    marks,
+    action,
+    path,
+  } = tabDetails;
+  const navigate = useNavigate();
   return (
     <>
-      <TestContainer>
+      <TestContainer onClick={() => navigate(path)}>
         <TestTop>
           <TestIcon>
             <LuClipboardList size={32} strokeWidth={1.5} />
@@ -60,7 +71,9 @@ const MockTest = ({ tabDetails }) => {
               <p>Marks :</p> <span>{marks.scored}</span>
               <h5>/{marks.total}</h5>
             </TestBottomLeft>
-            <TestBottomRight status={status}>{action}</TestBottomRight>
+            <TestBottomRight status={status} onClick={() => navigate(path)}>
+              {action}
+            </TestBottomRight>
           </TestBottom>
         ) : (
           <FullButton>{action}</FullButton>

@@ -71,12 +71,25 @@ export const OptionsGrid = styled.div`
   }
 `;
 
-export const Option = styled.button`
-  background-color: ${({ optionState, theme }) => theme.option[optionState].bg};
-  border: 1px solid
-    ${({ optionState, theme }) => theme.option[optionState].border};
-  color: ${({ isSelected, theme }) =>
-    isSelected ? "#343434" : theme.result_que_title};
+// export const Option = styled.button`
+//   background-color: ${({ optionState, theme }) => theme.option[optionState].bg};
+//   border: 1px solid
+//     ${({ optionState, theme }) => theme.option[optionState].border};
+//   color: ${({ isSelected, theme }) =>
+//     isSelected ? "#343434" : theme.result_que_title};
+//   height: 38px;
+//   display: flex;
+//   align-items: center;
+//   gap: 20px;
+//   border-radius: 10px;
+//   padding: 0px 20px;
+//   font-family: Poppins;
+//   font-weight: 500;
+//   font-style: Medium;
+//   font-size: 14px;
+// `;
+
+export const Option = styled.div`
   height: 38px;
   display: flex;
   align-items: center;
@@ -87,6 +100,18 @@ export const Option = styled.button`
   font-weight: 500;
   font-style: Medium;
   font-size: 14px;
+
+  background-color: ${({ optionState, theme }) => theme.option[optionState].bg};
+
+  border: 1px solid
+    ${({ optionState, theme }) => theme.option[optionState].border};
+
+  color: ${({ optionState, theme }) => {
+    if (optionState === "correct" || optionState === "wrong") {
+      return theme.mode === "DARK" ? "#343434" : "#434343";
+    }
+    return theme.result_que_title;
+  }};
 `;
 
 export const Explanation = styled.div`

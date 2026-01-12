@@ -9,6 +9,9 @@ import { RiCheckboxCircleFill } from "react-icons/ri";
 import { GoXCircleFill } from "react-icons/go";
 
 import {
+  MockTestResult,
+  ResultLabel,
+  ScoredMarks,
   TestCorrectStatus,
   TestDetails,
   TestInfo,
@@ -20,6 +23,7 @@ import {
   TestTop,
   TestWrongStatus,
   TopSection,
+  TotalMarks,
 } from "./ResultTop.styles";
 
 const ResultTop = ({
@@ -30,8 +34,13 @@ const ResultTop = ({
   duration,
   correct,
   wrong,
+  marks,
 }) => {
   const theme = useTheme();
+  const isMockTest = category === "MockTest";
+
+  const isPass = isMockTest && marks?.scored > 30;
+  const result = isMockTest ? (isPass ? "pass" : "fail") : null;
 
   return (
     <>
@@ -43,7 +52,7 @@ const ResultTop = ({
           </TestTop>
 
           <TestDetails>
-            {category === "Technical" && (
+            {category !== "Aptitude" && (
               <TestInfo>
                 <FaCode size={20} />
                 <span>{codingQuestions} Coding Qs</span>
@@ -60,16 +69,31 @@ const ResultTop = ({
           </TestDetails>
         </TestLeft>
 
-        <TestRight>
-          <TestRightInfo>
-            <RiCheckboxCircleFill size={44} style={{ color: "#00AA72" }} />
-            <span>{correct}</span>
-          </TestRightInfo>
-          <TestRightInfo>
-            <GoXCircleFill size={40} style={{ color: theme.result_wrong_bg }} />
-            <span>{wrong}</span>
-          </TestRightInfo>
-        </TestRight>
+        {category !== "MockTest" ? (
+          <TestRight>
+            <TestRightInfo>
+              <RiCheckboxCircleFill size={44} style={{ color: "#00AA72" }} />
+              <span>{correct}</span>
+            </TestRightInfo>
+            <TestRightInfo>
+              <GoXCircleFill
+                size={40}
+                style={{ color: theme.result_wrong_bg }}
+              />
+              <span>{wrong}</span>
+            </TestRightInfo>
+          </TestRight>
+        ) : (
+          <MockTestResult>
+            <ResultLabel result={result}>
+              {isPass ? "Pass" : "Fail"} :
+            </ResultLabel>
+
+            <ScoredMarks result={result}>{marks.scored}</ScoredMarks>
+
+            <TotalMarks>/{marks.total}</TotalMarks>
+          </MockTestResult>
+        )}
       </TopSection>
     </>
   );

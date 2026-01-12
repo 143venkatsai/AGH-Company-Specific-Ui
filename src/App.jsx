@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import CompanySpecific from "./pages/CompanySpecific/CompanySpecific";
 import AptitudeTest from "./pages/AptitudeTest/AptitudeTest";
 import TechnicalTest from "./pages/TechnicalTest/TechnicalTest";
+import MockTest from "./pages/MockTest/MockTest";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -178,13 +179,14 @@ button {
 function App() {
   const { name } = useSelector((state) => state.theme);
   return (
-    <ThemeProvider theme={name === "LIGHT" ? LIGHT_THEME : DARK_THEME}>
+    <ThemeProvider theme={name === "DARK" ? LIGHT_THEME : DARK_THEME}>
       <GlobalStyle />
       <Router>
         <Routes>
           <Route path="/" element={<CompanySpecific />} />
           <Route path="/aptitude/test-1/result" element={<AptitudeTest />} />
           <Route path="/technical/test-1/result" element={<TechnicalTest />} />
+          <Route path="/mock/test-1/result" element={<MockTest />} />
         </Routes>
       </Router>
     </ThemeProvider>

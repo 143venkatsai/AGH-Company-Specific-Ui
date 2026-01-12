@@ -1,11 +1,15 @@
 {
-  "category": "Technical",
-  "quizTitle": "Technical Test 1",
+  "category": "MockTest",
+  "quizTitle": "Mock Test 1",
   "codingQuestions": 3,
   "totalQuestions": 5,
   "duration": 30,
   "correct": 4,
   "wrong": 4,
+  "marks": {
+    "scored": 40,
+    "total": 80
+  },
   "coding": [
     {
       "id": 1,

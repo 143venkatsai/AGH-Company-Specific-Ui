@@ -26,7 +26,7 @@ export const CompanyContainer = styled.div`
   /* Mobile */
   @media (max-width: 768px) {
     max-width: 100%;
-    padding: 16px;
+    padding: 20px;
   }
 `;
 

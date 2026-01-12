@@ -32,7 +32,7 @@ const PracticeTest = ({ testDetails }) => {
 
   return (
     <>
-      <TestContainer>
+      <TestContainer onClick={() => navigate(path)}>
         <TestLeft>
           <TestIcon>
             {type === "aptitude" ? (

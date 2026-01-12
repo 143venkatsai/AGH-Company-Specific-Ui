@@ -11,6 +11,7 @@ export const mockTabData = [
       total: 100,
     },
     action: "Completed",
+    path: "/mock/test-1/result",
   },
   {
     id: 2,
