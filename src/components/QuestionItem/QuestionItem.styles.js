@@ -27,8 +27,10 @@ export const QuestionNumber = styled.h2`
 export const DifficultyBadge = styled.button`
   border-radius: 16px;
   border: none;
-  font-size: 12px;
-  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: Medium;
   cursor: default;
   height: 28px;
   display: flex;
@@ -115,8 +117,6 @@ export const Option = styled.div`
 `;
 
 export const Explanation = styled.div`
-  display: flex;
-  aign-items: center;
   font-family: Inter;
   font-weight: 700;
   font-style: Bold;

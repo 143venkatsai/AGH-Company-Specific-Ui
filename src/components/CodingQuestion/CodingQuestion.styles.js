@@ -90,7 +90,7 @@ export const SolveButton = styled.button`
   background-color: #ff2f4f;
   color: #ffffff;
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     padding: 0px 20px;
   }
 `;
