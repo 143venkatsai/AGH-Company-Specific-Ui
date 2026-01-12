@@ -121,6 +121,7 @@ export const Explanation = styled.div`
   font-weight: 700;
   font-style: Bold;
   font-size: 16px;
+  color: ${(props) => props.theme.result_que_title};
 
   span {
     font-weight: 500;
